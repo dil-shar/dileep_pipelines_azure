@@ -40,12 +40,6 @@ stages:
           trivy -v
         displayName: Trivy downloading 
 
-
-- stage: Scan
-  jobs:
-    - job: scan_using_trivy
-      steps:
-
       - task: CmdLine@2
         displayName: Scan
         inputs:
