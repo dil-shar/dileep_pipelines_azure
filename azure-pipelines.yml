@@ -44,5 +44,5 @@ stages:
         displayName: Scan
         inputs:
           script: |
-            sudo trivy image --light dileeps9/image-set-using-auzrepipelines:$(tag)
+            sudo trivy image --format json --light dileeps9/image-set-using-auzrepipelines:$(tag)
             
